@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+			 <!-- https://api.particle.io/v1/devices/{device id}/{function name}?access_token={access token} -->
+	<form action="https://api.particle.io/v1/devices/e00fce6838800cc7de05128e/currentWeight?access_token=a0fa9743cc6fedff09ab542417de9cbdc5144b1c" method="POST">
+	
+		<!-- name must "arg" for particle to reference -->
+		<label for="Weight">Weight(g) (between 0 and 1000):</label>
+		<input type="number" id="Weight" name="arg" min="0" max="1000">
+		<input type="submit">
+
+	</form>
+</body>
+</html>
